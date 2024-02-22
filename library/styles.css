@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
 .invisible {
     visibility: hidden;
 }
@@ -5,6 +13,21 @@
 .flex {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    border-left: 5px solid red;
+}
+
+.read {
+    border-left: 5px solid green;
 }
 
 .body {
@@ -19,11 +42,19 @@
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: header;
+    height: 10vh;
 }
 
 .cards {
     grid-area: cards;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
 }
 
 .footer {
@@ -48,6 +79,7 @@
     padding: 20px;
     background-color: aliceblue;
     width: 300px;
+    border-radius: 10px;
 }
 
 .close {
@@ -58,4 +90,35 @@
 .add-book {
     justify-self: center;
     margin-top: 20px;
+}
+
+.open-menu {
+    width: 100px;
+    height: 40px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    background-color: #9ca3af;
+}
+
+.add-book {
+    padding: 10px;
+}
+
+.close {
+    padding: 5px;
+    border-radius: 100px;
+    width: 25px;
+}
+
+.btn:hover {
+    background-color: #6b7280;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 20px;
 }
