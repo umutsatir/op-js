@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template:
+        "header"
+        "content"
+        "footer";
+    grid-template-columns: 10fr;
+    grid-template-rows: 3fr 7fr 1fr;
+    background-color: #efefef;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.header h1 {
+    color: #efefef;
+    font-weight: 900;
+}
+
+.header p {
+    color: #efefef;
+}
+
+.content {
+    width: 100%;
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.bold {
+    font-weight: 1000;
+}
+
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gameOver p {
+    color: darkred;
+}
+
+.hidden {
+    display: none;
+}
+
+.gameOver button {
+    height: 30px;
+    width: 125px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e4e4e7;
+    padding: 5px;
+}
+
+.gameOver button:hover {
+    background-color: #d4d4d8;
+}
+
+.board {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 15px 20px;
+    width: 400px;
+    height: 400px;
+    gap: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
