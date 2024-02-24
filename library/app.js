@@ -8,11 +8,13 @@ const closeButton = document.querySelector(".close");
 const formDiv = document.querySelector("#formDiv");
 let removeButtons = document.querySelectorAll(".cards.close");
 
-function Book(title, author, page, read) {
-    this.title = title;
-    this.author = author;
-    this.page = page;
-    this.read = read;
+class Book {
+    constructor(title, author, page, read) {
+        this.title = title;
+        this.author = author;
+        this.page = page;
+        this.read = read;
+    }
 }
 
 function addBook() {
