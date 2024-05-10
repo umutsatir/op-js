@@ -4,24 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/todo/style.css" />
+        <script type="module" src="./src/App.js" defer></script>
+        <script type="module" src="./src/Project.js" defer></script>
+        <script type="module" src="./src/Todo.js" defer></script>
         <title>Document</title>
     </head>
     <body>
         <div class="content">
             <div class="projects">
+                <button class="projectBtn">Add Project</button>
                 <div class="projectCards">
                     <div class="project">
                         <div class="projectContent">
                             <p>logo</p>
                             <p>0</p>
                         </div>
-                        <p>isim</p>
+                        <p class="projectName">isim</p>
                     </div>
                 </div>
             </div>
             <div class="todos">
+                <button class="addBtn">Create</button>
                 <div class="todo">
-                    <p class="todoDate">Sep 29 2020</p>
+                    <div class="todoUpper">
+                        <p class="todoDate">Sep 29 2020</p>
+                        <button class="deleteTodo">X</button>
+                    </div>
                     <div class="todoContent">
                         <i>Todo</i>
                         <div>

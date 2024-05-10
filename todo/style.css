@@ -53,6 +53,17 @@ html {
     font-size: 14px;
 }
 
+.todoUpper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteTodo {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
+
 .project {
     background-color: #cdcece;
     border-radius: 10px;
@@ -67,4 +78,40 @@ html {
 .projectContent {
     display: flex;
     justify-content: space-between;
+}
+
+.addBtn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.addBtn:hover {
+    background-color: #e5e7e7;
+}
+
+.addBtn:active {
+    background-color: #cdcece;
+}
+
+.passive {
+    color: black;
+    background-color: #cdcece;
+}
+
+.projectBtn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.projectBtn:hover {
+    background-color: #7e8383;
+}
+
+.projectBtn:active {
+    background-color: #5d6161;
+    color: white;
 }
